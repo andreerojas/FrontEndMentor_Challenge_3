@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    ;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    align-items: center;
+}
+
+footer {
+    flex-grow: 0;
+}
+
+.circle {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#star {
+    display: inline-block;
+    width: 50%;
+}
+
+.card {
+    background-color: hsl(215.3, 24.6%, 13.5%);
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 80%;
+    border-radius: 1em;
+}
+
+#rating {
+    display: flex;
+
+}
+
+#ack {
+    display: none;
+}
+
+#value {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+#submit {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    align-self: center;
+    width: 100%;
+    padding: 1em 3em;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 0.5em;
+}
+
+#description {
+    color: hsl(217, 12%, 63%);
+}
+
+#value button {
+    border: none;
+}
+
+#question {
+    font-size: 2em;
+}
+
+@media (min-width:576px) {
+    .card {
+        max-width: 60%;
+    }
+}
+
+@media (min-width:768px) {
+    .card {
+        max-width: 50%;
+    }
+}
+
+@media (min-width:992px) {
+    .card {
+        max-width: 40%;
+    }
+}
+
+@media (min-width:1200px) {
+    .card {
+        max-width: 30%;
+    }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#value button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor:grab;
+}
+
+#value button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+#submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor:grab;
+}
