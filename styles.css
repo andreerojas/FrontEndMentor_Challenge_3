@@ -10,7 +10,6 @@ body {
 p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    ;
 }
 
 main {
@@ -35,9 +34,10 @@ footer {
     align-items: center;
     width: 2.5rem;
     height: 2.5rem;
+    border:none;
 }
 
-#star {
+.star {
     display: inline-block;
     width: 50%;
 }
@@ -51,22 +51,38 @@ footer {
     border-radius: 1em;
 }
 
-#rating {
+.rating {
     display: flex;
 
 }
 
-#ack {
+.ack {
     display: none;
 }
 
-#value {
+.input-container {
     display: flex;
     justify-content: space-between;
     padding: 1em 0;
 }
 
-#submit {
+.input-container label{
+    position: relative;
+}
+
+.input-container input{
+    opacity: 0;
+    position: absolute;
+    margin:0;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    
+}
+
+
+
+.submit {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     align-self: center;
@@ -78,15 +94,12 @@ footer {
     margin-top: 0.5em;
 }
 
-#description {
+.description {
     color: hsl(217, 12%, 63%);
 }
 
-#value button {
-    border: none;
-}
 
-#question {
+.question {
     font-size: 2em;
 }
 
@@ -104,13 +117,13 @@ footer {
 
 @media (min-width:992px) {
     .card {
-        max-width: 40%;
+        max-width: 35%;
     }
 }
 
 @media (min-width:1200px) {
     .card {
-        max-width: 30%;
+        max-width: 25%;
     }
 }
 
@@ -126,18 +139,18 @@ footer {
     color: hsl(228, 45%, 44%);
 }
 
-#value button:hover {
+input:hover + .circle {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     cursor:grab;
 }
 
-#value button:focus {
+input:focus + .circle {
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
 
-#submit:hover {
+.submit:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
     cursor:grab;
