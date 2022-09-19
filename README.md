@@ -13,11 +13,13 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ##Overview
 ### Screenshot
 Mobile version
+
 ![](./challenge3_mobile.jpg)
 
 ![](./challenge3_mobile_thank.jpg)
 
 Desktop version
+
 ![](./challenge3_desktop.jpg)
 
 ![](./challenge3-desktop_thank.jpg)_
