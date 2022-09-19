@@ -20,7 +20,7 @@ Mobile version
 Desktop version
 ![](./challenge3_desktop.jpg)
 
-![](./challenge3-desktop_thank.jpg)
+![](./challenge3-desktop_thank.jpg)_
 
 ## My process
 ### Built with
