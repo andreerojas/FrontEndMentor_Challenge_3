@@ -34,7 +34,7 @@ footer {
     align-items: center;
     width: 2.5rem;
     height: 2.5rem;
-    border:none;
+    border: none;
 }
 
 .star {
@@ -53,34 +53,35 @@ footer {
 
 .rating {
     display: flex;
-
+    align-items: flex-start;
 }
 
 .ack {
     display: none;
+    align-items: center;
 }
 
+#rating-form{
+    align-self: stretch;
+}
 .input-container {
     display: flex;
     justify-content: space-between;
     padding: 1em 0;
 }
 
-.input-container label{
+.input-container label {
     position: relative;
 }
 
-.input-container input{
+.input-container input {
     opacity: 0;
     position: absolute;
-    margin:0;
+    margin: 0;
     top: 50%;
     left: 50%;
     width: 0%;
-    
 }
-
-
 
 .submit {
     background-color: hsl(25, 97%, 53%);
@@ -94,13 +95,65 @@ footer {
     margin-top: 0.5em;
 }
 
-.description {
+.main-text {
     color: hsl(217, 12%, 63%);
+    font-size: 1em;
 }
 
 
-.question {
+.header {
     font-size: 2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+input:hover+.circle {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: grab;
+}
+
+input:focus+.circle {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: grab;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.feedback {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border:none;
+    border-radius: 999px;
+    padding: 0.5em 0.7em;
+}
+
+.ack .main-text{
+    text-align: center;
+}
+
+.thank-image{
+    max-width: 100%;
 }
 
 @media (min-width:576px) {
@@ -125,33 +178,12 @@ footer {
     .card {
         max-width: 25%;
     }
-}
 
-
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    color: black;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-input:hover + .circle {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor:grab;
-}
-
-input:focus + .circle {
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-}
-
-.submit:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
-    cursor:grab;
+    .circle {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .main-text{
+        font-size: 1.2em;
+    }
 }
