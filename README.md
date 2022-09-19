@@ -22,7 +22,7 @@ Desktop version
 
 ![](./challenge3_desktop.jpg)
 
-![](./challenge3-desktop_thank.jpg)_
+![](./challenge3_desktop_thank.jpg)
 
 ## My process
 ### Built with
